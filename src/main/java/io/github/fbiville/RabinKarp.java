@@ -22,21 +22,24 @@ public class RabinKarp {
 
 		int end = text.length() - patternLength;
 		for (int i = 0; i < end; i++) {
-			if (patternHash == textSliceHash) {
-				String slice = text.substring(i, i+patternLength);
-				if (matches(pattern, slice)) {
-					return Optional.of(i);
-				}
+			if (patternHash == textSliceHash && matches(pattern, text, i)) {
+				return Optional.of(i);
 			}
 			if (i < end - 1) {
-				textSliceHash = hash(text, i+1, i+1+patternLength);
+				textSliceHash = (radix * (textSliceHash - coef * text.charAt(i+1)) 
+						+ text.charAt(i+1+patternLength)) % prime;
 			}
 		}
 		return Optional.<Integer>empty();
 	}
 
-	private boolean matches(String slice1, String slice2) {
-		return slice1.contentEquals(slice2);
+	private boolean matches(String pattern, String text, int offset) {
+		for (int i = 0; i < pattern.length(); i++) {
+			if (pattern.charAt(i) != text.charAt(i+offset)) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	private long hash(String text, int start, int end) {
