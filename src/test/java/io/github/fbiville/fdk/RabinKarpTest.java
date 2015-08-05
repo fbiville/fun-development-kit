@@ -23,6 +23,15 @@ public class RabinKarpTest {
 	}
 
 	@Test
+	public void computes_hash_iteratively() {
+		String text = "bonjour le monde";
+		long initialHash = matcher.hash(text, 0, 3);
+		long expectedHash = matcher.hash(text, 1, 4);
+
+		assertThat(matcher.nextTextSliceHash(text, initialHash, 1, 3)).isEqualTo(expectedHash);
+	}
+
+	@Test
 	public void longer_text() {
 		Optional<Integer> result = matcher.firstMatch("aha", "ahah");
 		
