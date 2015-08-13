@@ -1,5 +1,6 @@
-package io.github.fbiville.fdk;
+package io.github.fbiville.fdk.sort;
 
+import io.github.fbiville.fdk.sort.QuickSort;
 import org.junit.Test;
 
 import java.util.Random;

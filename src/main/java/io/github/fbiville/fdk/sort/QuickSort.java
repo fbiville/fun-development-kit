@@ -1,4 +1,6 @@
-package io.github.fbiville.fdk;
+package io.github.fbiville.fdk.sort;
+
+import static io.github.fbiville.fdk.array.ArrayOperations.swap;
 
 public class QuickSort {
 
@@ -61,12 +63,6 @@ public class QuickSort {
         }
         swap(values, start, currentBoundary);
         return currentBoundary;
-    }
-
-    private static <T extends Comparable<T>> void swap(T[] values, int firstIndex, int secondIndex) {
-        T temp = values[firstIndex];
-        values[firstIndex] = values[secondIndex];
-        values[secondIndex] = temp;
     }
 
     private static <T extends Comparable<T>> T median(T val1, T val2, T val3) {
