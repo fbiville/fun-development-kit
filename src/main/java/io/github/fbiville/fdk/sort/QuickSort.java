@@ -2,10 +2,13 @@ package io.github.fbiville.fdk.sort;
 
 import static io.github.fbiville.fdk.array.ArrayOperations.swap;
 
-public class QuickSort {
+public enum QuickSort implements Sort {
 
-    public static <T extends Comparable<T>> void sort(T[] values) {
+    INSTANCE;
+
+    public <T extends Comparable<T>> T[] sort(T[] values) {
         sort(values, 0, values.length);
+        return values;
     }
 
     private static <T extends Comparable<T>> void sort(T[] values, int start, int end) {
