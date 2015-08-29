@@ -1,6 +1,6 @@
-package io.github.fbiville.fdk.heap;
+package io.github.fbiville.fdk.collection.heap;
 
-import io.github.fbiville.fdk.array.DynamicArray;
+import io.github.fbiville.fdk.collection.array.DynamicArray;
 
 import java.util.Iterator;
 import java.util.Optional;

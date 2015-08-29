@@ -1,6 +1,5 @@
-package io.github.fbiville.fdk.array;
+package io.github.fbiville.fdk.collection.array;
 
-import io.github.fbiville.fdk.array.ArrayIterator;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

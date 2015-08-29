@@ -1,4 +1,4 @@
-package io.github.fbiville.fdk.stats;
+package io.github.fbiville.fdk.collection.stats;
 
 import io.github.fbiville.fdk.collection.Tuple2;
 import org.junit.Test;

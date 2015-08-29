@@ -1,8 +1,4 @@
-package io.github.fbiville.fdk.heap;
-
-import io.github.fbiville.fdk.sort.QuickSort;
-
-import java.util.Arrays;
+package io.github.fbiville.fdk.collection.heap;
 
 public enum HeapOrder {
     MIN {

@@ -1,4 +1,4 @@
-package io.github.fbiville.fdk.array;
+package io.github.fbiville.fdk.collection.array;
 
 import io.github.fbiville.fdk.collection.Countable;
 import io.github.fbiville.fdk.collection.Indexable;
@@ -6,7 +6,7 @@ import io.github.fbiville.fdk.collection.Indexable;
 import java.util.Iterator;
 import java.util.Optional;
 
-import static io.github.fbiville.fdk.array.ArrayOperations.shrink;
+import static io.github.fbiville.fdk.collection.array.ArrayOperations.shrink;
 import static java.util.Arrays.copyOf;
 
 public class DynamicArray<T> implements Countable, Indexable<T>, Iterable<T> {

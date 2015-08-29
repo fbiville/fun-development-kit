@@ -1,8 +1,8 @@
-package io.github.fbiville.fdk.sort;
+package io.github.fbiville.fdk.collection.sort;
 
-import io.github.fbiville.fdk.array.ArrayOperations;
-import io.github.fbiville.fdk.heap.BinaryHeap;
-import io.github.fbiville.fdk.heap.HeapOrder;
+import io.github.fbiville.fdk.collection.array.ArrayOperations;
+import io.github.fbiville.fdk.collection.heap.BinaryHeap;
+import io.github.fbiville.fdk.collection.heap.HeapOrder;
 
 public enum HeapSort implements Sort {
 

@@ -1,4 +1,4 @@
-package io.github.fbiville.fdk.sort;
+package io.github.fbiville.fdk.collection.sort;
 
 public interface Sort {
 

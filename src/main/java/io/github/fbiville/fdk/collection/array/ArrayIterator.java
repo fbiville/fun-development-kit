@@ -1,4 +1,4 @@
-package io.github.fbiville.fdk.array;
+package io.github.fbiville.fdk.collection.array;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

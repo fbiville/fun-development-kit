@@ -1,6 +1,6 @@
-package io.github.fbiville.fdk.sort;
+package io.github.fbiville.fdk.collection.sort;
 
-import static io.github.fbiville.fdk.array.ArrayOperations.swap;
+import static io.github.fbiville.fdk.collection.array.ArrayOperations.swap;
 
 public enum QuickSort implements Sort {
 

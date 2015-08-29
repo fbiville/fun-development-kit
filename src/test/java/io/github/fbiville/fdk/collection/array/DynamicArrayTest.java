@@ -1,7 +1,7 @@
-package io.github.fbiville.fdk.array;
+package io.github.fbiville.fdk.collection.array;
 
-import io.github.fbiville.fdk.heap.BinaryHeap;
-import io.github.fbiville.fdk.heap.HeapOrder;
+import io.github.fbiville.fdk.collection.heap.BinaryHeap;
+import io.github.fbiville.fdk.collection.heap.HeapOrder;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

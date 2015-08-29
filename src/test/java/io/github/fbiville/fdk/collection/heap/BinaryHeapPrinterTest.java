@@ -1,8 +1,5 @@
-package io.github.fbiville.fdk.heap;
+package io.github.fbiville.fdk.collection.heap;
 
-import io.github.fbiville.fdk.heap.BinaryHeap;
-import io.github.fbiville.fdk.heap.BinaryHeapPrinter;
-import io.github.fbiville.fdk.heap.HeapOrder;
 import org.junit.Test;
 
 import static org.assertj.core.api.StrictAssertions.assertThat;

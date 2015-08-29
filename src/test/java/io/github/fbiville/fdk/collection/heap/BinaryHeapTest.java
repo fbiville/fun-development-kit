@@ -1,4 +1,4 @@
-package io.github.fbiville.fdk.heap;
+package io.github.fbiville.fdk.collection.heap;
 
 import org.junit.Test;
 
