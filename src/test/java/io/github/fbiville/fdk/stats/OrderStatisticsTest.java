@@ -1,6 +1,6 @@
 package io.github.fbiville.fdk.stats;
 
-import io.github.fbiville.fdk.collection.Pair;
+import io.github.fbiville.fdk.collection.Tuple2;
 import org.junit.Test;
 
 import static org.assertj.core.api.StrictAssertions.assertThat;
@@ -37,7 +37,7 @@ public class OrderStatisticsTest {
         OrderStatistics<String> strings = new OrderStatistics<>("a", "b", "c", "d");
 
         assertThat(strings.median())
-                .isEqualTo(new Pair<>("b", "c"));
+                .isEqualTo(new Tuple2<>("b", "c"));
     }
 
     @Test
@@ -45,6 +45,6 @@ public class OrderStatisticsTest {
         OrderStatistics<Integer> ints = new OrderStatistics<>(1, 2, 3, 4, 5);
 
         assertThat(ints.median())
-                .isEqualTo(new Pair<>(3, 3));
+                .isEqualTo(new Tuple2<>(3, 3));
     }
 }

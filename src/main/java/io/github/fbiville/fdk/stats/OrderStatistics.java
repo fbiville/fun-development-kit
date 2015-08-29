@@ -1,6 +1,6 @@
 package io.github.fbiville.fdk.stats;
 
-import io.github.fbiville.fdk.collection.Pair;
+import io.github.fbiville.fdk.collection.Tuple2;
 import io.github.fbiville.fdk.heap.BinaryHeap;
 import io.github.fbiville.fdk.heap.HeapOrder;
 
@@ -31,13 +31,13 @@ public class OrderStatistics<T extends Comparable<T>> {
         return nth(rank, heap);
     }
 
-    public Pair<T> median() {
+    public Tuple2<T> median() {
         int middle = elements.length/2;
         if (elements.length % 2 == 1) {
             T min = minimumNth(middle+1).get();
-            return new Pair<>(min, min);
+            return new Tuple2<>(min, min);
         }
-        return new Pair<>(
+        return new Tuple2<>(
                 minimumNth(middle).get(),
                 maximumNth(middle).get()
         );

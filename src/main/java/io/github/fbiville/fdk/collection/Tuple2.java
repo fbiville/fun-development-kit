@@ -2,12 +2,12 @@ package io.github.fbiville.fdk.collection;
 
 import java.util.Objects;
 
-public class Pair<T> {
+public class Tuple2<T> {
 
     private final T left;
     private final T right;
 
-    public Pair(T left, T right) {
+    public Tuple2(T left, T right) {
         this.left = left;
         this.right = right;
     }
@@ -33,7 +33,7 @@ public class Pair<T> {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        final Pair other = (Pair) obj;
+        final Tuple2 other = (Tuple2) obj;
         return Objects.equals(this.left, other.left)
                 && Objects.equals(this.right, other.right);
     }
